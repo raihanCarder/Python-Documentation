@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Python Documentation </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <! ADD NAVIGATAION BELOW HERE -->
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li><a class="nav-link" href="#Comments">Comments</a></li>
+                <li><a class="nav-link" href="#Variables">Variables</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#If_Else">If Else</a></li>
+                <li><a class="nav-link" href="#For_Loops">For loops</a></li>
+                <li><a class="nav-link" href="#While_Loops">While loops</a></li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#References">References</a></li>
+
+            </ul>
+
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+            <p class="intro-less-space">it is used in:
+            <ul class="specifics">
+                <li>web development</li>
+                <li>software development</li>
+                <li>mathematics</li>
+                <li>system scripting</li>
+                <li>and much more!</li>
+            </ul>
+            </p>
+        </section>
+
+        <section id="Hello_World" class="main-section">
+            <header>Hello World</header>
+            <p>Python is an interpreted programming language, this means that as a developer you write Python (.py)
+                files in a text editor and then put those files into the python interpreter to be executed. Let's write
+                our first Python file, called hello.py, which can be done in any text editor:</p>
+            <code>print("Hello, World!")</code>
+            <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your
+                file, and run. That is how you print something on Python.</p>
+        </section>
+        <section id="Comments" class="main-section">
+            <header>Comments</header>
+            <p>Comments can be used to explain Python code.
+                Comments can be used to make the code more readable.
+                Comments can be used to prevent execution when testing code.<br>Comments starts with a #, and Python
+                will ignore them:</p>
+            <code>#This is a comment <br>print("Hello, World!")</code>
+            <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line.A comment does
+                not have to be text that explains the code, it can also be used to prevent Python from executing code.
+            </p>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>Variables</header>
+            <p>Python has no command for declaring a variable. A variable is created the moment you first assign a value
+                to it. Variables do not need to be declared with any particular type, and can even change type after
+                they have been set.</p>
+            <code>x = 5 <br>y = "John" <br >print(x) <br>print(y)</code>
+            <p>Variables do not need to be declared with any particular type, and can even change type after they have
+                been set.</p>
+        </section>
+        <section id="Data_Types" class="main-section">
+            <header>Data Types</header>
+            <p>
+                In programming, data type is an important concept. Variables can store data of different types, and
+                different types can do different things. Python has the following data types built-in by default, in
+                these categories: <br><br>
+                <i>Text Type:</i> str <br>
+                <i>Numeric Type:</i> int, float, complex<br>
+                <i>Mapping Type:</i> Dict<br>
+                <i>Set Types:</i> set, frozenset<br>
+                <i>Boolean Type:</i> bool<br>
+                <i>Binary Type:</i> bytes, bytearray, memoryview<br>
+                <i>None Type:</i> NoneType.<br><br>
+                The type() function tells you what data type a variable is a part of:
+            </p> <code>x=5 <br> type(x) </code>
+            <p>The code above would show you what type of data type x is.</p>
+        </section>
+        <section id="If_Else" class="main-section">
+            <header>If Else</header>
+            <p>Python supports the usual logical conditions from mathematics which can be seen <a
+                    href="https://www.w3schools.com/python/python_conditions.asp">here</a>. An "if statement" is written
+                by using the if keyword.</p>
+            <code>a=3<br> b=200<br>if b > a:<br>
+  &emsp;print("b is greater than a")
+</code>
+
+            <p>In this example we use two variables, a and b, which are used as part of the if statement to test whether
+                b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to
+                screen that "b is greater than a". Another thing to keep in mind is that Python relies on indentation
+                (whitespace at the beginning of a line) to define scope in the code. Other programming languages often
+                use curly-brackets for this purpose. The else keyword catches anything which isn't caught by the
+                preceding conditions:
+            </p>
+            <code>a=3<br> b=200<br>if b > a:<br>
+  &emsp;print("b is greater than a")<br>else:
+    <br> &emsp;print("a is greater than b")
+</code>
+            <p>In this example a is greater than b, so the first condition is not true, so we go to the else condition
+                and print to screen that "a is greater than b".</p>
+        </section>
+        <section id="For_Loops" class="main-section">
+            <header>For Loops</header>
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or
+                a string).
+
+                This is less like the for keyword in other programming languages, and works more like an iterator method
+                as found in other object-orientated programming languages.
+
+                With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+            </p><code>fruits = ["apple", "banana", "cherry"]<br>
+for x in fruits:<br>
+  &emsp;print(x)</code>
+            <p>The for loop does not require an indexing variable to set beforehand.
+
+            </p>
+        </section>
+        <section id="While_Loops" class="main-section">
+            <header>While loops</header>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+            <code>i = 1<br>
+while i < 6:<br>
+  &emsp;print(i)<br>
+  &emsp;i += 1</code>
+            <p>The while loop requires relevant variables to be ready, in this example we need to define an indexing
+                variable, i, which we set to 1.</p>
+        </section>
+        <section id="Functions" class="main-section">
+            <header>Functions</header>
+            <p>A function is a block of code which only runs when it is called.
+                You can pass data, known as parameters, into a function.
+                A function can return data as a result. In Python a function is defined using the def keyword:
+            </p><code>def my_function():<br>
+  &emsp;print("Hello from a function")</code>
+            <p>
+                To call a function, use the function name followed by parenthesis:
+            </p><code>def my_function():<br>
+  &emsp;print("Hello from a function")<br><br>my_function()
+</code>
+            <p>Arguments can be passed on in the function call if your function defintion includes parameters.</p>
+        </section>
+        <section id="References" class="main-section">
+            <header>References</header>
+            <p> All the information and documentation on this page was taken from <a
+                    href="https://www.w3schools.com/python/default.asp">w3Schools</a>. The site was created by: Raihan
+                Carder.</p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
